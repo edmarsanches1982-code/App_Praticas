@@ -29,12 +29,10 @@ if dados:
           return df
         except FileNotfoundError:
           return pd.dataframe()
-
- df = carregar_dados(dados)
+    df = carregar_dados(dados)
     st.table(df)
-
 else:
-    st.info("carregue um ficheiro excel para começar")
+  st.info("carregue um ficheiro excel para começar")
     
 
     
