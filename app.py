@@ -27,10 +27,10 @@ if dados:
           try:
             df = pd.read_excel(dados)
             return df
-            except FileNotfoundError:
+          except FileNotfoundError:
             return pd.DataFrame()
-            df = carregar_dados(dados)
-            st.table(df)
+          df = carregar_dados(dados)
+          st.table(df)
 else:
     st.info("carregue um ficheiro excel para começar")
       
