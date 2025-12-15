@@ -22,17 +22,17 @@ with st.sidebar:
       type=["xlsx", "xls"]
     )
   
-if dados:
-    def carregar_dados(dados):
-        try:
-          df =pd.read_excel(dados)
-          return df
-        except FileNotfoundError:
-          return pd.dataframe()
-          df = carregar_dados(dados)
-          st.table(df)
-else:
-  st.info("carregue um ficheiro excel para começar")
-    
+  if dados:
+      def carregar_dados(dados):
+          try:
+            df =pd.read_excel(dados)
+            return df
+          except FileNotfoundError:
+            return pd.dataframe()
+            df = carregar_dados(dados)
+            st.table(df)
+  else:
+    st.info("carregue um ficheiro excel para começar")
+      
 
     
