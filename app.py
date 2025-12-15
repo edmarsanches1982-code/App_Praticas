@@ -21,7 +21,6 @@ with st.sidebar:
       "carregue...", 
       type=["xlsx", "xls"]
     )
-  
   if dados:
       def carregar_dados(dados):
           try:
