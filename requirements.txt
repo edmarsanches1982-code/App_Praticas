@@ -1,0 +1,2 @@
+streamlit
+streamit_option_menu
