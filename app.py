@@ -13,20 +13,21 @@ menu = option_menu(menu_title="menu",
                    icons=["house", "bar-chart","bar-chart-line", "toggles","bar-chart"],
                    menu_icon="cast",
                    default_index=0,
-                   orientation= "horizontal"                 
+                   orientation="horizontal"                 
   )
+
 with st.sidebar:
     st.success("**UPLOAD DE DADOS**")
     dados = st.file_uploader(
       "carregue...", 
-      type=["xlsx", "xls"]
+      type=["xlsx","xls"]
     )
 if dados:
       def carregar_dados(dados):
           try:
             df = pd.read_excel(dados)
             return df
-          except FileNotfoundError:
+            except FileNotfoundError:
             return pd.DataFrame()
             df = carregar_dados(dados)
             st.table(df)
