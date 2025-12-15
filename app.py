@@ -64,7 +64,7 @@ with col1:
   st.subheader("coluna 1")
   dados_hist = [3, 9, 5, 12, 6, 7, 5, 6, 10]
   fig, ax = plt.subplots()
-  ax.hist(dados_hist, bins=5, color="skyblue" , edgecolor="black"
+  ax.hist(dados_hist, bins=5, color="skyblue" , edgecolor="black")
   ax.set_title("Histograma")
   st.pyplot(fig)
 
