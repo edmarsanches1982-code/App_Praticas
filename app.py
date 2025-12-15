@@ -21,7 +21,7 @@ with st.sidebar:
       "carregue...", 
       type=["xlsx", "xls"]
     )
-  if dados:
+if dados:
       def carregar_dados(dados):
           try:
             df =pd.read_excel(dados)
