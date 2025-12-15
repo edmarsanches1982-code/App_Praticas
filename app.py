@@ -30,7 +30,7 @@ if dados:
             return pd.dataframe()
             df = carregar_dados(dados)
             st.table(df)
-  else:
+else:
     st.info("carregue um ficheiro excel para começar")
       
 
