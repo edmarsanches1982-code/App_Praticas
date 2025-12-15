@@ -25,10 +25,10 @@ with st.sidebar:
 if dados:
     def carregar_dados(dados):
         try:
-            df =pd.read_excel(dados)
-            return df
+          df =pd.read_excel(dados)
+          return df
         except FileNotfoundError:
-                return pd.dataframe()
+          return pd.dataframe()
 
  df = carregar_dados(dados)
     st.table(df)
