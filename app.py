@@ -69,7 +69,7 @@ with col1:
     st.pyplot(fig)
 
 with col3:
-    st. subheader("coluna 2")
+    st.subheader("coluna 2")
     lab = ["python", "java", "C++", "javaScript"]
     pop = [45, 25, 15, 15]
     fig, ax = plt.subplots()
