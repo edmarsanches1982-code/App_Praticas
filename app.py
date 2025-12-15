@@ -33,8 +33,8 @@ if dados:
     df = carregar_dados(dados)
     st.table(df)
 
-    else:
-      st.info("carregue um ficheiro excel para começar")
+ else:
+     st.info("carregue um ficheiro excel para começar")
     
 
     
