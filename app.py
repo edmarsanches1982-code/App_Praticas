@@ -16,7 +16,7 @@ menu = option_menu(menu_title="menu",
                    
   )
 with st.sidebar:
-    st.sucess("UPLOAD DE DADOS**")
+    st.success("**UPLOAD DE DADOS**")
     dados = st.file_uploader(
       "carregue...", 
       type=["xlsx", "xls"]
