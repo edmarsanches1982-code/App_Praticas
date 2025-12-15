@@ -24,7 +24,7 @@ with st.sidebar:
 if dados:
       def carregar_dados(dados):
           try:
-            df =pd.read_excel(dados)
+            df = pd.read_excel(dados)
             return df
           except FileNotfoundError:
             return pd.DataFrame()
