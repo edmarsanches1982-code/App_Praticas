@@ -72,7 +72,8 @@ with col3:
     st. subheader("coluna 2")
     lab = ["python", "java", "C++", "javaScript"]
     pop = [45, 25, 15, 15]
-    fig, ax = (pop, labels=lab, autopct="%1.1f%%", startangle=90)
+    fig, ax 0plt.subplots
+    ax.pie(pop, labels=lab, autopct="%1.1f%%", startangle=90)
     ax.set_title("Gráfico circular")
     ax.axis("equal")
     st.pyplot(fig)
