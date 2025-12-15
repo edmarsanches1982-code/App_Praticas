@@ -67,7 +67,7 @@ with col1:
     ax.hist(dados_hist, bins=5, color="skyblue" , edgecolor="black")
     ax.set_title("Histograma")
     st.pyplot(fig)
-
+  
 with col3:
     st.subheader("coluna 2")
     lab = ["python", "java", "C++", "javaScript"]
