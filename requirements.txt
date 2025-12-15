@@ -3,5 +3,5 @@ streamlit_option_menu
 matplotlib
 pandas
 numpy
-openpyx1
+openpyxl
 
