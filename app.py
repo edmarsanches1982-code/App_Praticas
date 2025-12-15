@@ -20,8 +20,7 @@ with st.sidebar:
     st.success("**UPLOAD DE DADOS**")
     dados = st.file_uploader(
       "carregue...", 
-      type=["xlsx","xls"]
-    )
+      type=["xlsx","xls"])
   if dados:
     def carregar_dados(dados):
       try:
